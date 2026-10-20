@@ -1,0 +1,6 @@
+# Python >= 3.11. Install the appropriate CPU/CUDA PyTorch build first if needed.
+torch>=2.6
+numpy>=1.26,<3
+Pillow>=10
+tqdm>=4.66,<5
+scikit-image>=0.22,<1

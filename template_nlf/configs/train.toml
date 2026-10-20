@@ -1,0 +1,29 @@
+# Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+# SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+vertebra_level = "L1"
+data_root = "data"
+id_list = "data/L1_train.txt"
+output_dir = "outputs/L1"
+seed = 123
+workers = 0
+image_side = 512
+batch_size = 128
+epochs = 300
+save_every = 20
+base_learning_rate = 2.121e-4
+# The manuscript does not give AdamW weight decay; this is an explicit implementation choice.
+weight_decay = 0.003
+dtype = "float32"
+stride_train = 32
+stride_test = 32
+centered_stride = true
+projection_box_size_mm = 427.0 # Historical parameter name; units are mm.
+depth_bins = 16
+feature_channels = 512
+inference_fusion_weight = 0.5
+kernel_mlp_hidden_dim = 384
+kernel_mlp_hidden_layers = 1
+spectral_modes = 1024
+kernel_regularization_weight = 0.01
+spatial_loss_weight = 1.0
+surface_loss_weight = 1.0

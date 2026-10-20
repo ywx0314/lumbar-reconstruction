@@ -1,0 +1,12 @@
+# Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+# SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+plane = "AP"
+image_size = [512, 512]
+data_root = "data"
+id_list = "splits/test.txt"
+checkpoint = "outputs/AP/epoch_200.pt"
+output_dir = "results/evaluation/AP"
+batch_size = 1
+workers = 0
+dice_threshold = 0.005
+save_predictions = true

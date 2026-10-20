@@ -1,0 +1,23 @@
+# Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+# SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+vertebra_level = "L1"
+data_root = "data"
+id_list = "data/test_ids.txt"
+images_dir = "data/extracted/L1"
+camera_dir = "data/test_proj_params"
+checkpoint = "outputs/L1/epoch_300.pt"
+output_dir = "results/L1"
+gt_dir = "" # Optional: data/reference/<sample_id>/L1.stl
+seed = 123
+image_side = 512
+dtype = "float32"
+stride_train = 32
+stride_test = 32
+centered_stride = true
+projection_box_size_mm = 427.0
+depth_bins = 16
+feature_channels = 512
+inference_fusion_weight = 0.5
+kernel_mlp_hidden_dim = 384
+kernel_mlp_hidden_layers = 1
+spectral_modes = 1024

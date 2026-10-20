@@ -1,0 +1,13 @@
+# Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+# SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+seed = 123
+plane = "AP" # Use ML for lateral images; train/apply a single view at a time.
+image_size = [512, 512]
+data_root = "data"
+source_list = "splits/source_train.txt"
+target_list = "splits/target_train.txt"
+output_dir = "outputs/AP"
+batch_size = 32
+workers = 0
+epochs = 200
+save_every = 20

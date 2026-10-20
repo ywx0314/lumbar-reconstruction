@@ -1,0 +1,55 @@
+Research-Only Noncommercial License
+SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+
+Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+
+1. Scope
+This license applies only to code, documentation and modifications for which
+Wanxin Yu holds copyright in this distribution (the "Project Materials").
+Third-party materials retain their respective licenses. In particular, original
+Microsoft HRNet code remains under the MIT license reproduced in
+LICENSES/HRNet-MIT.txt. This license does not revoke, replace or restrict rights
+independently granted by those third-party licenses.
+
+2. Limited permission
+Subject to the conditions below, permission is granted, free of charge, to use,
+reproduce and modify the Project Materials solely for noncommercial scientific
+research, and to redistribute original or modified copies solely for that purpose.
+No permission is granted for commercial use. Commercial use includes selling or
+licensing the Project Materials for a fee, incorporating them into a commercial
+product or service, and using them to perform research or development for a
+commercial product or service, or to provide paid services. Research use does
+not authorize subsequent commercial use of the Project Materials.
+
+3. Attribution and citation
+All copies or substantial portions, including modified versions, must retain
+this license, the applicable copyright notices, CITATION.md and applicable
+third-party notices. Modifications must be identified as such.
+Any publication, preprint, thesis, presentation, publicly released report or
+other publicly disseminated research result that uses or is derived from the
+Project Materials must cite the reference specified in CITATION.md.
+Redistributors must preserve this citation obligation for the Project Materials.
+Citation alone does not authorize commercial use.
+
+4. Redistribution and other rights
+Redistribution of the Project Materials, including modifications, must preserve
+these noncommercial research, attribution and citation conditions. No recipient
+may grant broader rights to the Project Materials than this license provides.
+This condition does not relicense independently licensed third-party materials.
+No rights are granted for other purposes or to use the copyright holder's name
+to endorse a product or service. Other uses require a separate written license
+from the copyright holder, who may be contacted at yuwanxin@sjtu.edu.cn.
+
+5. Termination
+The permissions granted by this license terminate automatically if its
+conditions are violated. Termination does not affect the conditions applicable
+to copies previously received or third-party rights independently granted.
+
+6. Disclaimer
+THE PROJECT MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PROJECT MATERIALS
+OR THEIR USE OR OTHER DEALINGS.

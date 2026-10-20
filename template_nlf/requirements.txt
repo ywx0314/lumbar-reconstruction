@@ -1,0 +1,7 @@
+# Python >= 3.11. Install the appropriate CPU/CUDA PyTorch build first if needed.
+torch>=2.6
+numpy>=1.26,<3
+Pillow>=10
+scipy>=1.11,<2
+trimesh>=4,<5
+rtree>=1,<2
