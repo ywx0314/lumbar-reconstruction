@@ -1,0 +1,37 @@
+# Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn)
+# SPDX-License-Identifier: LicenseRef-Research-Only-Noncommercial
+name: CPU checks
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - component: vertebra_extraction
+            extra_entrypoints: evaluate.py evaluate_images.py
+          - component: template_nlf
+            extra_entrypoints: preprocessing/compute_spectral_encoding.py
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU dependencies
+        working-directory: ${{ matrix.component }}
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements.txt
+      - name: Run tests
+        working-directory: ${{ matrix.component }}
+        run: python -m unittest discover -s tests -v
+      - name: Check command-line entry points
+        working-directory: ${{ matrix.component }}
+        run: |
+          python train.py --help
+          python predict.py --help
+          for script in ${{ matrix.extra_entrypoints }}; do
+            python "$script" --help
+          done
