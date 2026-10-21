@@ -21,8 +21,6 @@ Explore 12 precomputed cases with paired original/extracted AP and lateral radio
 
 *Preview of the interactive workspace. Click the image to open the demo.*
 
-The demo displays precomputed reconstruction results; it does not run network inference in the browser. No model installation or GPU is required to explore the examples.
-
 ## Installation
 
 Python 3.11 or newer is required. Local verification used Python 3.12 and PyTorch 2.11.0 on CPU. Create and activate a virtual environment, then install either or both components from the repository root:
