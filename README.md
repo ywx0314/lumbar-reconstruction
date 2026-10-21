@@ -11,6 +11,18 @@ The repository contains two independently runnable components:
 
 AP denotes anteroposterior. The filename suffix `ML` denotes the lateral view, also called LAT in the method description. Reconstruction uses a separate trained model for each lumbar level.
 
+## Interactive demo
+
+**[Open the online demo ↗](https://ywx0314.github.io/lumbar-reconstruction/)** · [Demo guide](https://ywx0314.github.io/lumbar-reconstruction/README.md)
+
+Explore 12 precomputed cases with paired original/extracted AP and lateral radiographs, calibrated projection overlays, freely rotatable L1–L5 surfaces and optional CT reference overlays. Switch cases, select lumbar levels, and adjust image/surface opacity in the browser.
+
+[![Interactive lumbar reconstruction demo with biplanar images and L1–L5 surfaces](https://github.com/user-attachments/assets/b0e335c3-074b-4b4a-80c4-ae4250d7812f)](https://ywx0314.github.io/lumbar-reconstruction/)
+
+*Preview of the interactive workspace. Click the image to open the demo.*
+
+The demo displays precomputed reconstruction results; it does not run network inference in the browser. No model installation or GPU is required to explore the examples.
+
 ## Installation
 
 Python 3.11 or newer is required. Local verification used Python 3.12 and PyTorch 2.11.0 on CPU. Create and activate a virtual environment, then install either or both components from the repository root:
@@ -66,7 +78,7 @@ Tests use synthetic inputs and cover losses, gradient reversal, spatial gates, d
 
 ## Included assets and validation limits
 
-This repository contains source code, configurations and tests. It does not include patient data, private sample lists, template meshes, spectral assets or trained weights. The complete SSM, local-deformation and DRR data-generation pipeline is not included.
+The model source does not bundle training/evaluation datasets, private sample lists, canonical template/spectral assets or trained weights. The separate [demo-site.zip](demo-site.zip) contains the precomputed visualization examples used by the online viewer. The complete SSM, local-deformation and DRR data-generation pipeline is not included.
 
 Full GPU training, published cohort metrics and inference timings have not been reproduced by the included source tests. Use compatible template assets and checkpoints; do not assume a checkpoint from a different implementation or template ordering is interchangeable.
 
