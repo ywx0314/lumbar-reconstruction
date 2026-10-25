@@ -13,13 +13,17 @@ AP denotes anteroposterior. The filename suffix `ML` denotes the lateral view, a
 
 ## Interactive demo
 
-**[Open the online demo ↗](https://ywx0314.github.io/lumbar-reconstruction/)** · [Demo guide](https://ywx0314.github.io/lumbar-reconstruction/README.md)
+**[Explore the online demo ↗](https://ywx0314.github.io/lumbar-reconstruction/)** · [Reconstruction explorer](https://ywx0314.github.io/lumbar-reconstruction/#demo) · [Point mapping](https://ywx0314.github.io/lumbar-reconstruction/#mapping)
 
-Explore 12 precomputed cases with paired original/extracted AP and lateral radiographs, calibrated projection overlays, freely rotatable L1–L5 surfaces and optional CT reference overlays. Switch cases, select lumbar levels, and adjust image/surface opacity in the browser.
+Explore the two-stage workflow from paired AP and lateral radiographs to vertebra extraction and anatomically corresponding L1–L5 surfaces. The reconstruction explorer presents five examples selected by surface agreement with CT-derived reference surfaces. Switch between original and extracted images, inspect calibrated projections, rotate the reconstruction, isolate individual lumbar levels, and overlay the CT reference.
 
-[![Interactive lumbar reconstruction demo with biplanar images and L1–L5 surfaces](https://github.com/user-attachments/assets/b0e335c3-074b-4b4a-80c4-ae4250d7812f)](https://ywx0314.github.io/lumbar-reconstruction/)
+[![Reconstruction explorer showing biplanar images, L1–L5 surfaces and a CT reference overlay](https://github.com/user-attachments/assets/befe8ba0-956f-4d8f-8690-368cfa757af3)](https://ywx0314.github.io/lumbar-reconstruction/#demo)
 
-*Preview of the interactive workspace. Click the image to open the demo.*
+The point-mapping workspace uses the supplied L1–L5 statistical shape model templates as **Case 000**. Select a lumbar level and target case, then place surface or interior points on the template to explore their corresponding locations in the reconstruction. Linked cameras and matching point colors support side-by-side inspection; interior-point depth, shell opacity and coordinate readouts make the transfer visible. Interior points are transferred using mean value coordinates of the corresponding boundary.
+
+[![Point-mapping workspace showing a template and reconstruction with a corresponding interior point](https://github.com/user-attachments/assets/79a7f160-96e7-461b-ac93-742aba5e6ccd)](https://ywx0314.github.io/lumbar-reconstruction/#mapping)
+
+*Click either preview to open its interactive workspace.*
 
 ## Installation
 
