@@ -78,11 +78,11 @@ python -m unittest discover -s tests -v
 
 Tests use synthetic inputs and cover losses, gradient reversal, spatial gates, decoding, geometry and network forward/backward passes. GitHub Actions runs CPU tests separately for each component.
 
-## Included assets and validation limits
+## Included assets
 
-The model source does not bundle training/evaluation datasets, private sample lists, canonical template/spectral assets or trained weights. The separate [demo-site.zip](demo-site.zip) contains the precomputed visualization examples used by the online viewer. The complete SSM, local-deformation and DRR data-generation pipeline is not included.
+The model source does not bundle training/evaluation datasets, private sample lists, canonical template/spectral assets or trained weights. The separate [demo-site.zip](demo-site.zip) contains the precomputed visualization examples used by the online viewer.
 
-Full GPU training, published cohort metrics and inference timings have not been reproduced by the included source tests. Use compatible template assets and checkpoints; do not assume a checkpoint from a different implementation or template ordering is interchangeable.
+Use compatible template assets and checkpoints; do not assume a checkpoint from a different implementation or template ordering is interchangeable.
 
 ## Acknowledgments
 
