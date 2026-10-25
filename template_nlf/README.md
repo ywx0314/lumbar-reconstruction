@@ -97,7 +97,7 @@ To evaluate, set `gt_dir` to a folder containing `<id>/L1.stl`, changing the lev
 
 ## Validation and assets
 
-Tests use synthetic inputs and include a 512×512 forward/backward pass with a small synthetic template. No dataset, trained weights, template assets or full SSM/deformation/DRR generation pipeline is bundled. Full batch128 GPU training, published metrics and timing have not been reproduced by these tests. Checkpoints require compatible model structure, spectral assets and vertex ordering.
+Tests use synthetic inputs and include a 512×512 forward/backward pass with a small synthetic template. No dataset, trained weights or template assets are bundled. Checkpoints require compatible model structure, spectral assets and vertex ordering.
 
 ## License
 
