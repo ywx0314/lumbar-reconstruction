@@ -88,10 +88,6 @@ Use compatible template assets and checkpoints; do not assume a checkpoint from 
 
 The reconstruction image-encoder design references [ShilongHong/DAGNet](https://github.com/ShilongHong/DAGNet), including FCEM, DVCA and CAFM. See the [reconstruction guide](template_nlf/README.md), [citation information](CITATION.md) and [third-party notices](THIRD_PARTY_NOTICES.md) for attribution and upstream license information. The extraction network uses Microsoft HRNet, acknowledged in the third-party notices.
 
-## Author
-
-Wanxin Yu (yuwanxin@sjtu.edu.cn).
-
 ## License
 
 Copyright (c) 2026 Wanxin Yu (yuwanxin@sjtu.edu.cn).
